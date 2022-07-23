@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài 1 : Tính ngày tháng năm -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính ngày tháng năm</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Ngày</label>
+                <input id="day" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Tháng</label>
+                <input id="month" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Năm</label>
+                <input id="year" type="number" class="form-control" />
+              </div>
+              <button id="btnYesterday" class="btn btn-success">Ngày hôm qua</button>
+              <button id="btnTomorrow" class="btn btn-success">Ngày mai</button>
+            </div>
+            <div id="thongBaoNgay" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài 2 : Tính ngày -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính ngày</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Tháng</label>
+                <input id="months" type="number" class="form-control" />
+                <label>Năm</label>
+                <input id="years" type="number" class="form-control" />
+              </div>
+              <button id="btnCalDay" class="btn btn-success">Tính ngày</button>
+              
+            </div>
+            <div id="NotifyDay" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀi 3 : Đọc số -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Đọc số</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập 3 số</label>
+                <input id="threeNumber" type="number" class="form-control" />
+                
+              </div>
+              <button id="btnReadNumber" class="btn btn-success">Đọc số</button>
+              
+            </div>
+            <div id="readNumber" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài 4 : Tìm sinh viên xa trường nhất -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tìm sinh viên xa trường nhất</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Sinh viên 1</label>
+                <input id="nameOne" type="text" class="form-control" placeholder="Nhập tên" />
+                <input id="xOne" type="number" class="form-control" placeholder="Nhập toạ độ X"/>
+                <input id="yOne" type="number" class="form-control" placeholder="Nhập toạ độ Y"/>
+              </div>
+              <div class="form-group">
+                <label>Sinh viên 2</label>
+                <input id="nameTwo" type="text" class="form-control" placeholder="Nhập tên"/>
+                <input id="xTwo" type="number" class="form-control" placeholder="Nhập toạ độ X"/>
+                <input id="yTwo" type="number" class="form-control" placeholder="Nhập toạ độ Y"/>
+              </div>
+              <div class="form-group">
+                <label>Sinh viên 3</label>
+                <input id="nameThree" type="text" class="form-control" placeholder="Nhập tên"/>
+                <input id="xThree" type="number" class="form-control" placeholder="Nhập toạ độ X"/>
+                <input id="yThree" type="number" class="form-control" placeholder="Nhập toạ độ Y"/>
+              </div>
+              
+              <label>Trường học</label>
+                <input id="xSchool" type="number" class="form-control" placeholder="Nhập toạ độ X"/>
+                <input id="ySchool" type="number" class="form-control" placeholder="Nhập toạ độ Y"/>
+              </div>
+              
+              <button id="btnFind" class="btn btn-success">Tìm</button>
+            </div>
+            <div id="farFromHome" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
